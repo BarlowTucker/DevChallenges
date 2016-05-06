@@ -10,15 +10,13 @@ import UIKit
 
 class ChallengeListViewController: UIViewController {
     private var challenges: [String:[Challenge]] = Challenge.challenges()
+    private var selectedChallenge:Challenge?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        guard let viewController = segue.destinationViewController as? ChallengeDetailViewController where segue.identifier == "ShowDetail" else { return }
+        
+        viewController.challenge = self.selectedChallenge
     }
 
 }
@@ -27,15 +25,27 @@ extension ChallengeListViewController: UITableViewDataSource, UITableViewDelegat
     private func sectionKey(forSection section:Int) -> String {
         return Array(self.challenges.keys)[section]
     }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.challenges.count
     }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.challenges[self.sectionKey(forSection: section)]!.count
     }
+    
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.sectionKey(forSection: section)
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let challenges = self.challenges[self.sectionKey(forSection: indexPath.section)]!
+        self.selectedChallenge = challenges[indexPath.row]
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        self.performSegueWithIdentifier("ShowDetail", sender: self)
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:ChallengeTableViewCell = tableView.dequeueReusableCellWithIdentifier("ChallengeCell", forIndexPath: indexPath) as! ChallengeTableViewCell
         
@@ -44,7 +54,7 @@ extension ChallengeListViewController: UITableViewDataSource, UITableViewDelegat
         
         cell.previewImageView.image = challenge.image
         cell.titleLabel.text = challenge.title
-        cell.descriptionLabel.text = challenge.description
+        cell.descriptionLabel.text = challenge.subtitle
         
         return cell
     }

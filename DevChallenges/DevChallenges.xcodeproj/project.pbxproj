@@ -18,6 +18,7 @@
 		B34AD2281CDD06680031A236 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34AD2261CDD06680031A236 /* Challenge.swift */; };
 		B34AD22B1CDD06B80031A236 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34AD22A1CDD06B80031A236 /* ChallengeTableViewCell.swift */; };
 		B34AD22D1CDD078A0031A236 /* challengeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B34AD22C1CDD078A0031A236 /* challengeList.plist */; };
+		B34AD22F1CDD36100031A236 /* ChallengeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34AD22E1CDD36100031A236 /* ChallengeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B34AD2261CDD06680031A236 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Challenge.swift; path = Models/Challenge.swift; sourceTree = "<group>"; };
 		B34AD22A1CDD06B80031A236 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeTableViewCell.swift; path = Views/CustomCells/ChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		B34AD22C1CDD078A0031A236 /* challengeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = challengeList.plist; sourceTree = "<group>"; };
+		B34AD22E1CDD36100031A236 /* ChallengeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeDetailViewController.swift; path = Controllers/ChallengeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B34AD1F51CDD02AE0031A236 /* ChallengeListViewController.swift */,
+				B34AD22E1CDD36100031A236 /* ChallengeDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				B34AD1F61CDD02AE0031A236 /* ChallengeListViewController.swift in Sources */,
 				B34AD22B1CDD06B80031A236 /* ChallengeTableViewCell.swift in Sources */,
+				B34AD22F1CDD36100031A236 /* ChallengeDetailViewController.swift in Sources */,
 				B34AD2271CDD06680031A236 /* Challenge.swift in Sources */,
 				B34AD1F41CDD02AE0031A236 /* AppDelegate.swift in Sources */,
 			);

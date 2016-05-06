@@ -12,18 +12,26 @@
 				<dict>
 					<key>title</key>
 					<string>Light Switches</string>
+					<key>ordinal</key>
+					<integer>1</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>lightSwitches</string>
+					<key>date</key>
+					<date>2016-03-18T21:01:26Z</date>
 				</dict>
 				<dict>
 					<key>title</key>
 					<string>Magic Squares</string>
+					<key>ordinal</key>
+					<integer>5</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>magic</string>
+					<key>date</key>
+					<date>2016-04-22T21:02:14Z</date>
 				</dict>
 			</array>
 		</dict>
@@ -35,42 +43,62 @@
 				<dict>
 					<key>title</key>
 					<string>Photo Browser</string>
+					<key>ordinal</key>
+					<integer>4</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>photobrowser</string>
+					<key>date</key>
+					<date>2016-04-15T21:02:39Z</date>
 				</dict>
 				<dict>
 					<key>title</key>
 					<string>Jane Apple TV</string>
+					<key>ordinal</key>
+					<integer>3</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>magic</string>
+					<key>date</key>
+					<date>2016-04-08T21:02:54Z</date>
 				</dict>
 				<dict>
 					<key>title</key>
 					<string>Dev Challenges App</string>
+					<key>ordinal</key>
+					<integer>7</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>dev</string>
+					<key>date</key>
+					<date>2016-05-06T21:03:11Z</date>
 				</dict>
 				<dict>
 					<key>title</key>
 					<string>Dice</string>
+					<key>ordinal</key>
+					<integer>2</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>lightSwitches</string>
+					<key>date</key>
+					<date>2016-03-25T21:03:33Z</date>
 				</dict>
 				<dict>
 					<key>title</key>
 					<string>Moon Lander</string>
+					<key>ordinal</key>
+					<integer>6</integer>
 					<key>description</key>
 					<string>Description will go here</string>
 					<key>imageName</key>
 					<string>magic</string>
+					<key>date</key>
+					<date>2016-04-29T21:03:47Z</date>
 				</dict>
 			</array>
 		</dict>

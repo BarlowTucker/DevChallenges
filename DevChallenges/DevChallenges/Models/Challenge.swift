@@ -12,10 +12,18 @@ struct Challenge {
     let image: UIImage
     let title: String
     let description: String
+    let ordinal: Int
+    let date: NSDate
     
-    init(title:String, description:String, imageName:String?) {
+    var subtitle: String {
+        return "Challenge \(ordinal)"
+    }
+    
+    init(title:String, ordinal:Int, description:String, date:NSDate, imageName:String?) {
         self.title = title
         self.description = description
+        self.ordinal = ordinal
+        self.date = date
         
         if let imageName = imageName, let image = UIImage(named: imageName) where !imageName.isEmpty {
             self.image = image
@@ -41,10 +49,13 @@ struct Challenge {
             for item in items {
                 guard let challengeData = item as? NSDictionary,
                     let title = challengeData["title"] as? String,
-                    let description = challengeData["description"] as? String else { continue }
+                    let description = challengeData["description"] as? String,
+                    let ordinal = challengeData["ordinal"] as? Int,
+                    let date = challengeData["date"] as? NSDate else { continue }
 
                 let imageName = challengeData["imageName"] as? String
-                let challenge:Challenge = Challenge(title: title, description: description, imageName: imageName)
+                let challenge:Challenge = Challenge(title: title, ordinal: ordinal, description: description, date: date, imageName: imageName)
+                
                 challenges.append(challenge)
             }
             
