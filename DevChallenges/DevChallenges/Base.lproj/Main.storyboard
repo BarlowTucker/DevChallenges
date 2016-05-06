@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Challenge List View Controller-->
+        <!--Dev Challenges-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ChallengeListViewController" customModule="DevChallenges" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,26 +42,28 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9t-e6-mUU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9t-e6-mUU">
                                                     <rect key="frame" x="137" y="32.5" width="430" height="19.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19.5" id="lv0-aj-yby"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="m9t-e6-mUU" firstAttribute="top" secondItem="BI6-fm-MCo" secondAttribute="bottom" constant="-1" id="7Mg-fk-Xj7"/>
                                                 <constraint firstAttribute="topMargin" secondItem="rJw-oC-Tsv" secondAttribute="top" id="BgG-Py-KSy"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="rJw-oC-Tsv" secondAttribute="leading" id="DJ1-k3-ZTq"/>
-                                                <constraint firstItem="m9t-e6-mUU" firstAttribute="leading" secondItem="rJw-oC-Tsv" secondAttribute="trailing" constant="17" id="DuU-KZ-Dv6"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BI6-fm-MCo" secondAttribute="trailing" id="OUE-yT-BTT"/>
-                                                <constraint firstItem="m9t-e6-mUU" firstAttribute="top" secondItem="BI6-fm-MCo" secondAttribute="bottom" constant="-1" id="TJx-Q0-p2a"/>
                                                 <constraint firstItem="BI6-fm-MCo" firstAttribute="leading" secondItem="rJw-oC-Tsv" secondAttribute="trailing" constant="8" id="VB8-Wn-wNg"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="m9t-e6-mUU" secondAttribute="bottom" constant="10" id="to4-Kl-IVx"/>
+                                                <constraint firstItem="m9t-e6-mUU" firstAttribute="leading" secondItem="rJw-oC-Tsv" secondAttribute="trailing" constant="17" id="mgV-DV-0QZ"/>
                                                 <constraint firstAttribute="topMargin" secondItem="BI6-fm-MCo" secondAttribute="top" id="vHu-gK-pYq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="m9t-e6-mUU" secondAttribute="trailing" constant="33" id="IfD-u9-lqR"/>
+                                            <constraint firstAttribute="trailing" secondItem="m9t-e6-mUU" secondAttribute="trailing" constant="33" id="9Ry-DK-UTj"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="m9t-e6-mUU" id="oJy-4m-x5W"/>
@@ -84,7 +86,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fPK-At-Cmg" secondAttribute="bottom" id="vkL-4J-lOz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="I5G-0P-ZFQ"/>
+                    <navigationItem key="navigationItem" title="Dev Challenges" id="I5G-0P-ZFQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,6 +101,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wEB-Uf-Log">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.35109639619999999" green="0.43440777310000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.35109639616861049" green="0.43440777305511019" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

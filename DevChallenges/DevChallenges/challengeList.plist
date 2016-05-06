@@ -17,6 +17,61 @@
 					<key>imageName</key>
 					<string>lightSwitches</string>
 				</dict>
+				<dict>
+					<key>title</key>
+					<string>Magic Squares</string>
+					<key>description</key>
+					<string>Description will go here</string>
+					<key>imageName</key>
+					<string>magic</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Game/UI Challenges</string>
+			<key>challenges</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Photo Browser</string>
+					<key>description</key>
+					<string>Description will go here</string>
+					<key>imageName</key>
+					<string>photobrowser</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Jane Apple TV</string>
+					<key>description</key>
+					<string>Description will go here</string>
+					<key>imageName</key>
+					<string>magic</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Dev Challenges App</string>
+					<key>description</key>
+					<string>Description will go here</string>
+					<key>imageName</key>
+					<string>dev</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Dice</string>
+					<key>description</key>
+					<string>Description will go here</string>
+					<key>imageName</key>
+					<string>lightSwitches</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Moon Lander</string>
+					<key>description</key>
+					<string>Description will go here</string>
+					<key>imageName</key>
+					<string>magic</string>
+				</dict>
 			</array>
 		</dict>
 	</array>

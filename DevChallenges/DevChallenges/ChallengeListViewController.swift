@@ -27,8 +27,11 @@ extension ChallengeListViewController: UITableViewDataSource, UITableViewDelegat
     private func sectionKey(forSection section:Int) -> String {
         return Array(self.challenges.keys)[section]
     }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.challenges.count
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.challenges[self.sectionKey(forSection: section)]!.count
     }
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.sectionKey(forSection: section)
