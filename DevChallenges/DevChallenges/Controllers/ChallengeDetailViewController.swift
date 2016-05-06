@@ -25,8 +25,12 @@ class ChallengeDetailViewController: UIViewController {
         self.titleLabel.text = challenge.title
         self.descriptionLabel.text = challenge.description
         self.subtitleLabel.text = challenge.subtitle
+        
+        self.actionButton.hidden = challenge.appURL == nil
     }
 
     @IBAction func actionTapped(sender: AnyObject) {
+        guard let url = self.challenge?.appURL else { return }
+        UIApplication.sharedApplication().openURL(url)
     }
 }

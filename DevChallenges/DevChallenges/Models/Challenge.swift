@@ -14,16 +14,18 @@ struct Challenge {
     let description: String
     let ordinal: Int
     let date: NSDate
+    let appURL:NSURL?
     
     var subtitle: String {
         return "Challenge \(ordinal)"
     }
     
-    init(title:String, ordinal:Int, description:String, date:NSDate, imageName:String?) {
+    init(title:String, ordinal:Int, description:String, date:NSDate, imageName:String?, url:NSURL?) {
         self.title = title
         self.description = description
         self.ordinal = ordinal
         self.date = date
+        self.appURL = url
         
         if let imageName = imageName, let image = UIImage(named: imageName) where !imageName.isEmpty {
             self.image = image
@@ -54,7 +56,9 @@ struct Challenge {
                     let date = challengeData["date"] as? NSDate else { continue }
 
                 let imageName = challengeData["imageName"] as? String
-                let challenge:Challenge = Challenge(title: title, ordinal: ordinal, description: description, date: date, imageName: imageName)
+                let url = challengeData["url"] as? NSURL
+                
+                let challenge:Challenge = Challenge(title: title, ordinal: ordinal, description: description, date: date, imageName: imageName, url:url)
                 
                 challenges.append(challenge)
             }
