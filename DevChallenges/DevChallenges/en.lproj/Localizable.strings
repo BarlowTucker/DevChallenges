@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  DevChallenges
+
+  Created by Barlow Tucker on 5/13/16.
+  Copyright © 2016 Barlow Tucker. All rights reserved.
+*/
+
+"title" = "Dev Challenges";
+"GameSection" = "GAME/UI CHALLENGES";
+"LogicSection" = "LOGIC CHALLENGES";
+"Challenge" = "Challenge";
+
+//Challenge 1
+"challenge1-title" = "Light Switches";
+"challenge1-description" = "Imagine a row of N light switches, each attached to a light bulb. All the bulbs are off to start with. You are going to release your inner child so they can run back and forth along this row of light switches, flipping bunches of switches from on to off or vice versa. The challenge will be to figure out the state of the lights after this fun happens.";
+
+//Challenge 2
+"challenge2-title" = "Dice";
+"challenge2-description" = "Make a simple Dice Game (see Challenge Docs for game rules).  The simple version of the rules: the player has 3 dice, they roll the dice by pressing a button that says Roll.  If they roll a 3 then the game is over.";
+
+//Challenge 3
+"challenge3-title" = "Jane Apple TV";
+"challenge3-description" = "Make a simple Apple TV app that calls Jane's API to get a list of deals.  Display the deals on the app and when one is selected, display the deal details.";
+
+//Challenge 4
+"challenge4-title" = "Photo Browser";
+"challenge4-description" = "The JanePhotoBrowser is a scrolling photo gallary. The API to interface with the photo browser is similar to the APIs used in UITableViews and UICollectionViews and should have a familiar feel.";
+
+//Challenge 5
+"challenge5-title" = "Magic Squares";
+"challenge5-description" = "A 3x3 magic square is a 3x3 grid of the numbers 1-9 such that each row, column, and major diagonal adds up to 15. Write a function that, given a grid containing the numbers 1-9, determines whether it's a magic square. Use whatever format you want for the grid, such as a 2-dimensional array, or a 1-dimensional array of length 9, or a function that takes 9 arguments. You do not need to parse the grid from the program's input, but you can if you want to. You don't need to check that each of the 9 numbers appears in the grid: assume this to be true.";
+
+//Challenge 6
+"challenge6-title" = "Moon Lander";
+"challenge6-description" = "This is a simple game that make use of physics and animations.  The game works like this: You have a circle that starts near the top of the screen and ground at the bottom of the screen.  The ball will fall, gradually moving fast the more it falls.  If the ball hits the ground going \"fast\" (you can define what fast means here), then it will splat and the game is over. Tapping on the screen turns on a rocket on the circle (you can animate a rocket, or it can be an invisible rocket if you'd like).  This starts applying force upward, slowing the decent and eventually sending the circle upward (if the user continues to press on the screen). The goal is to get the circle to land safely without going kersplat.";
+
+//Challenge 7
+"challenge7-title" = "Dev Challenges App";
+"challenge7-description" = "Write an app that displays all the challenges we have had so far.";
+
+//Challenge 8
+"challenge8-title" = "Localize";
+"challenge8-description" = "Localize the challenges app into multiple languages.";

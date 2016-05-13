@@ -17,22 +17,22 @@ struct Challenge {
     let appURL:NSURL?
     
     var subtitle: String {
-        return "Challenge \(ordinal)"
+        return "\(NSLocalizedString("Challenge", comment: "Challenge")) \(ordinal)"
     }
     
-    init(title:String, ordinal:Int, description:String, date:NSDate, imageName:String?, url:NSURL?) {
-        self.title = title
-        self.description = description
+    init(ordinal:Int, date:NSDate, url:NSURL?) {
+        let key = "challenge\(ordinal)"
+        self.title = NSLocalizedString("\(key)-title", comment: "Challenge Title")
+        self.description = NSLocalizedString("\(key)-description", comment: "Challenge Description")
         self.ordinal = ordinal
         self.date = date
         self.appURL = url
         
-        if let imageName = imageName, let image = UIImage(named: imageName) where !imageName.isEmpty {
+        if let image = UIImage(named: key) {
             self.image = image
         } else {
             self.image = UIImage(named: "placeholder")!
         }
-        
     }
     
     static func challenges() -> [String:[Challenge]] {
@@ -50,15 +50,12 @@ struct Challenge {
             var challenges:[Challenge] = []
             for item in items {
                 guard let challengeData = item as? NSDictionary,
-                    let title = challengeData["title"] as? String,
-                    let description = challengeData["description"] as? String,
                     let ordinal = challengeData["ordinal"] as? Int,
                     let date = challengeData["date"] as? NSDate else { continue }
 
-                let imageName = challengeData["imageName"] as? String
                 let url = challengeData["url"] as? NSURL
                 
-                let challenge:Challenge = Challenge(title: title, ordinal: ordinal, description: description, date: date, imageName: imageName, url:url)
+                let challenge:Challenge = Challenge(ordinal: ordinal, date: date, url:url)
                 
                 challenges.append(challenge)
             }

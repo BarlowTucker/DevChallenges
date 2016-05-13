@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  DevChallenges
+
+  Created by Barlow Tucker on 5/13/16.
+  Copyright © 2016 Barlow Tucker. All rights reserved.
+*/
+
+"title" = "Pruebas de Devs";
+"GameSection" = "PRUEBAS de JUEGO/UI";
+"LogicSection" = "PRUEBAS de LÓGICA";
+"Challenge" = "Prueba";
+
+//Challenge 1
+"challenge1-title" = "Interruptores de luz";
+"challenge1-description" = "Imagínese una fila de N numero de interruptores de luz, cada uno conectado a una bombilla. Todas las bombillas están apagadas para empezar. Usted va a liberar su niño interior para que pueda correr hacia atrás y adelante a lo largo de esta fila de interruptores de luz, cambiando algunos de los interruptores de encendido a apagado o viceversa. La prueba consistirá en averiguar el estado de las luces después de este divertido sucede.";
+
+//Challenge 2
+"challenge2-title" = "Dado";
+"challenge2-description" = "Hacer un juego de dados (ver Challenge Docs para las reglas del juego). La versión simple de las reglas: el jugador tiene 3 dados, se tiran los dados pulsando un botón que dice Roll. Si tiran un 3, el juego ha terminado.";
+
+//Challenge 3
+"challenge3-title" = "Jane Apple TV";
+"challenge3-description" = "";
+
+//Challenge 4
+"challenge4-title" = "Explorador de Fotos";
+"challenge4-description" = "";
+
+//Challenge 5
+"challenge5-title" = "Cuadrados Mágicos";
+"challenge5-description" = "";
+
+//Challenge 6
+"challenge6-title" = "Luna Aterrizador";
+"challenge6-description" = "";
+
+//Challenge 7
+"challenge7-title" = "App de Pruebas";
+"challenge7-description" = "";
+
+//Challenge 8
+"challenge8-title" = "Localizar";
+"challenge8-description" = "";

@@ -17,6 +17,7 @@ class ChallengeListViewController: UIViewController {
         guard let viewController = segue.destinationViewController as? ChallengeDetailViewController where segue.identifier == "ShowDetail" else { return }
         
         viewController.challenge = self.selectedChallenge
+        self.navigationItem.title = NSLocalizedString("title", comment: "List Title")
     }
 
 }
@@ -35,7 +36,8 @@ extension ChallengeListViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.sectionKey(forSection: section)
+        let key = self.sectionKey(forSection: section)
+        return NSLocalizedString(key, comment: "Section Title")
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

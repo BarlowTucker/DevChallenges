@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B332DF051CE67208008DFCCF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B332DF071CE67208008DFCCF /* Localizable.strings */; };
 		B34AD1F41CDD02AE0031A236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34AD1F31CDD02AE0031A236 /* AppDelegate.swift */; };
 		B34AD1F61CDD02AE0031A236 /* ChallengeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34AD1F51CDD02AE0031A236 /* ChallengeListViewController.swift */; };
 		B34AD1F91CDD02AE0031A236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34AD1F71CDD02AE0031A236 /* Main.storyboard */; };
@@ -39,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B332DF031CE671F6008DFCCF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B332DF041CE671F6008DFCCF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B332DF081CE67219008DFCCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B332DF091CE6721F008DFCCF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B34AD1F01CDD02AE0031A236 /* DevChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34AD1F31CDD02AE0031A236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B34AD1F51CDD02AE0031A236 /* ChallengeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +145,7 @@
 				B34AD1FA1CDD02AE0031A236 /* Assets.xcassets */,
 				B34AD1FF1CDD02AE0031A236 /* Info.plist */,
 				B34AD22C1CDD078A0031A236 /* challengeList.plist */,
+				B332DF071CE67208008DFCCF /* Localizable.strings */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B34AD1E71CDD02AE0031A236;
 			productRefGroup = B34AD1F11CDD02AE0031A236 /* Products */;
@@ -290,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B332DF051CE67208008DFCCF /* Localizable.strings in Resources */,
 				B34AD22D1CDD078A0031A236 /* challengeList.plist in Resources */,
 				B34AD1FE1CDD02AE0031A236 /* LaunchScreen.storyboard in Resources */,
 				B34AD1FB1CDD02AE0031A236 /* Assets.xcassets in Resources */,
@@ -359,10 +367,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B332DF071CE67208008DFCCF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B332DF081CE67219008DFCCF /* en */,
+				B332DF091CE6721F008DFCCF /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B34AD1F71CDD02AE0031A236 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B34AD1F81CDD02AE0031A236 /* Base */,
+				B332DF031CE671F6008DFCCF /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -371,6 +389,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B34AD1FD1CDD02AE0031A236 /* Base */,
+				B332DF041CE671F6008DFCCF /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -550,6 +569,7 @@
 				B34AD21A1CDD02AE0031A236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B34AD21B1CDD02AE0031A236 /* Build configuration list for PBXNativeTarget "DevChallengesTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +578,7 @@
 				B34AD21D1CDD02AE0031A236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B34AD21E1CDD02AE0031A236 /* Build configuration list for PBXNativeTarget "DevChallengesUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +587,7 @@
 				B34AD2201CDD02AE0031A236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

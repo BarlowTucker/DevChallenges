@@ -1,0 +1,30 @@
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "1n8-OE-LjB"; */
+"1n8-OE-LjB.title" = "Ajustes";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BI6-fm-MCo"; */
+"BI6-fm-MCo.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Open App"; ObjectID = "Hh7-eG-HQf"; */
+"Hh7-eG-HQf.normalTitle" = "Open App";
+
+/* Class = "UINavigationItem"; title = "Dev Challenges"; ObjectID = "I5G-0P-ZFQ"; */
+"I5G-0P-ZFQ.title" = "Pruebas de Dev";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "OEB-a5-nqG"; */
+"OEB-a5-nqG.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "Sui-xw-PKw"; */
+"Sui-xw-PKw.title" = "Sobre";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "gFf-ed-Irw"; */
+"gFf-ed-Irw.text" = "Description";
+
+/* Class = "UILabel"; text = "SubTitle"; ObjectID = "kIX-lx-Myv"; */
+"kIX-lx-Myv.text" = "SubTitle";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "m9t-e6-mUU"; */
+"m9t-e6-mUU.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Challenges"; ObjectID = "p3V-42-tJI"; */
+"p3V-42-tJI.title" = "Pruebas";
